@@ -14,7 +14,9 @@ Build-Depends: debhelper (>= 7.0.0), autotools-dev,
 	dh-python | python-support,
 	debhelper (>= 9),
 	dh-exec,
-	liboctave-dev | octave3.2-headers
+	liboctave-dev | octave3.2-headers,
+	automake, 
+	autoconf
 Standards-Version: 3.9.4
 Homepage: http://mpsolve.dm.unipi.it/mpsolve/
 Vcs-Git: git://bezout.dm.unipi.it/mpsolve.git
