@@ -27,7 +27,6 @@ clean: debian/compat
 debian/compat: 
 ifeq ($(DEB_HOST_MULTIARCH),)
 	echo 7 > $@
-	mv debian/control.lucid debian/control
 else
 	echo 9 > $@
 	mv debian/control.precise debian/control
