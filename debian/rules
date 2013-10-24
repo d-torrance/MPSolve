@@ -10,6 +10,9 @@
 # Modified to make a template file for a multi-binary package with separated
 # build-arch and build-indep targets  by Bill Allombert 2001
 
+# This should handle setting DEB_HOST_MULTIARCH if supported and dropping it if not. 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH 2> /dev/null || echo "")
+
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
@@ -18,6 +21,9 @@ export DH_OPTIONS
 
 %:
 	dh $@
+
+debian/%.install: debian/%.install.in
+	sed 's/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)\//g' %< > $@
 
 override_dh_auto_configure:
 	./autogen.sh
