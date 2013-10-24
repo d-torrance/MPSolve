@@ -22,6 +22,8 @@ export DH_OPTIONS
 %:
 	dh $@
 
+patch: debian/compat
+
 debian/compat: 
 	ifeq($(DEB_HOST_MULTIARCH), "")
 		echo 7 > $@
