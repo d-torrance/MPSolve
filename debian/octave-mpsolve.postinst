@@ -4,6 +4,6 @@
 
 set -e
 
-octave -qH --eval "pkg install -global -nodeps /usr/lib/octave-mpsolve/mpsolve.tar.gz"
+octave -qH --eval "pkg install -global -nodeps -auto /usr/lib/octave-mpsolve/mpsolve.tar.gz"
 
 #DEBHELPER#
