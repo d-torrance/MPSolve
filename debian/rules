@@ -39,3 +39,6 @@ debian/%.install: debian/%.install.in
 override_dh_auto_configure: debian/libmps3-dev.install debian/libmps3.install
 	./autogen.sh
 	dh_auto_configure
+
+override_dh_shlibdeps:
+	dh_shlibdeps -Loctave-mpsolve
