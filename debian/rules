@@ -36,7 +36,7 @@ endif
 debian/%.install: debian/%.install.in
 	sed 's/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)\//g' $< > $@
 
-override_dh_auto_configure: debian/libmps3-dev.install debian/libmps3.install
+override_dh_auto_configure: debian/libmps3-dev.install debian/libmps3.install debian/libmps-fortran3.install debian/libmps-fortran3-dev.install
 	./autogen.sh
 	dh_auto_configure
 

@@ -55,6 +55,33 @@ Description: Multiprecision polynomial solver
  .
  This package contains the development headers and the .so library.
 
+Package: libmps-fortran3
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Multiprecision polynomial solver
+ A polynomial rootfinder that can determine arbitrary precision approximations
+ with guaranteed inclusion radii.
+ It supports exploiting of polynomial structures such as sparsisty and allows
+ for polynomial implicitly defined or in some non standard basis.
+ .
+ This package contains the module MPS that can be used to call MPSolve from
+ FORTRAN programs.
+
+Package: libmps-fortran3-dev
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends}
+Description: Multiprecision polynomial solver
+ A polynomial rootfinder that can determine arbitrary precision approximations
+ with guaranteed inclusion radii.
+ It supports exploiting of polynomial structures such as sparsisty and allows
+ for polynomial implicitly defined or in some non standard basis.
+ .
+ This package contains the module MPS that can be used to compile FORTRAN
+ programs using MPSolve.
+
 Package: python-mpsolve
 Architecture: any
 Section: python
