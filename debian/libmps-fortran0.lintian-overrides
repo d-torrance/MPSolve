@@ -1,0 +1,3 @@
+# libmps-fortran0 is actually not linked against libc since it uses
+# none of its symbols. 
+libmps-fortran0: library-not-linked-against-libc
