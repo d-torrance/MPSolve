@@ -56,7 +56,7 @@ Description: Multiprecision polynomial solver
  .
  This package contains the development headers and the .so library.
 
-Package: libmps-fortran3
+Package: libmps-fortran0
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
@@ -70,7 +70,7 @@ Description: Multiprecision polynomial solver
  This package contains the module MPS that can be used to call MPSolve from
  FORTRAN programs. 
 
-Package: libmps-fortran3-dev
+Package: libmps-fortran0-dev
 Architecture: any
 Section: libdevel
 Depends: ${misc:Depends}
