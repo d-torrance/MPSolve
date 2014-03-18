@@ -73,7 +73,7 @@ Description: Multiprecision polynomial solver
 Package: libmps-fortran0-dev
 Architecture: any
 Section: libdevel
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, libmps-fortran0
 Description: Multiprecision polynomial solver
  A polynomial rootfinder that can determine arbitrary precision approximations
  with guaranteed inclusion radii.
