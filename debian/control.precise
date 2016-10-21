@@ -16,7 +16,8 @@ Build-Depends: debhelper (>= 7.0.0), autotools-dev,
 	autoconf,
 	libtool,
 	bison,
-	flex
+	flex,
+	libmpfr-dev
 Standards-Version: 3.9.4
 Homepage: http://mpsolve.dm.unipi.it/mpsolve/
 Vcs-Git: git://bezout.dm.unipi.it/mpsolve.git
