@@ -1,9 +1,0 @@
-#!/bin/bash
-#
-# Install the Octave package for MPSolve
-
-set -e
-
-octave -qH --eval "pkg install -global -nodeps -auto /usr/lib/octave-mpsolve/mpsolve.tar.gz"
-
-#DEBHELPER#
